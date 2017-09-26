@@ -33,9 +33,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Reddit Board Search',
-        minify: {
-          collapseWhitespace: false
-        },
+      minify: {
+        collapseWhitespace: false
+      },
       template: './src/index.ejs', // Load a custom template (ejs by default see the FAQ for details)
     }),
     new ExtractTextPlugin({
@@ -44,4 +44,4 @@ module.exports = {
       allChunks: true
     })
   ]
-}
+};
